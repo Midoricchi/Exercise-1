@@ -1,0 +1,60 @@
+body {
+        margin: 0;
+}
+
+.header {
+        padding: 100px;
+        background: lightgreen;
+        text-align: center;
+}
+
+.content {
+        background: rgb(77, 24, 77);
+        height: 1000px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+}
+
+.content .box {
+            margin-top: 200px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #ffc0cb;
+            border: 10px;
+            position: sticky;
+            top: 300px;
+            animation: box 6s infinite;
+            transition: all 0.5s;
+} 
+
+.footer {
+        padding: 100px;
+        background: lightgreen;    
+        text-align: center;
+}
+
+@keyframes box {
+    0% {
+        margin-left: -1000px;
+    }
+    50% {
+        margin-left: 1000px;
+    }
+    100%{
+        margin-left: -1000px;
+    }
+}
+
+.content .box:hover {
+                border-radius: 0%;
+                background: rgb(231, 151, 252);
+                border: 10px solid #0a6e0f;
+}
+
+.content .box:active {
+                    border-radius: 25%;
+                    background: rgb(176, 252, 176);
+                    border: 10px solid #b06cf0;
+}
